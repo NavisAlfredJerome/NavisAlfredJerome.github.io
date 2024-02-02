@@ -14,33 +14,76 @@
         table {
             border-collapse: collapse;
             width: 100%;
-            border: 2px solid black; /* border for the entire table */
+            border: 2px solid black;
+            /* border for the entire table */
         }
-        
+
         /* CSS for table headers */
         th {
-            border: 1px solid black; /* border for table header cells */
-            padding: 8px;
-            text-align: left;
-        }
-        
-        /* CSS for table data cells */
-        td {
-            border: 1px solid black; /* border for table data cells */
+            border: 1px solid black;
+            /* border for table header cells */
             padding: 8px;
             text-align: left;
         }
 
-        .column-width-1{
+        /* CSS for table data cells */
+        td {
+            border: 1px solid black;
+            /* border for table data cells */
+            padding: 8px;
+            text-align: left;
+        }
+
+        .column-width-1 {
             width: 100px;
         }
 
+        .container {
+            display: inline-block;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            align-items: center;
+        }
+
+        .tbcontainer {
+            border: 1px;
+            padding: 2px;
+            text-align: left;
+        }
+
+        .row {
+            margin-bottom: 2px;
+        }
+
+        .flag {
+            width: 30px;
+            height: auto;
+            margin-left: 10px;
+        }
+
+        .tbflag {
+            width: 30px;
+            height: auto;
+            /* margin-left: 10px; */
+        }
     </style>
 </head>
 
 <body>
-    <div>I.N.D.I.A</div>
-    <div>BJP</div>
+    <h2 align="center"> Vote Vault 2024</h2>
+    <div class="row">
+        <div class="container">
+            <img class="flag" src="IndiaFlag.png" alt="Flag">
+            <Span>I.N.D.I.A</Span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="container">
+            <img class="flag" src="BJPFlag.png" alt="Flag">
+            <Span>BJP</Span>
+        </div>
+    </div>
+
     <div>SOUTH INDIA</div>
 
     <table>
@@ -55,7 +98,10 @@
         </thead>
         <tbody>
             <tr>
-                <td>Tamil Nadu</td>
+                <td class="tbcontainer">
+                    <img class="tbflag" src="tamilnaduflag.png" alt="Flag">
+                    <span>Tamil Nadu</span>
+                </td>
                 <td class="numeric">39</td>
                 <td class="numeric">35</td>
                 <td class="numeric">0</td>
