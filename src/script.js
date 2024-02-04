@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function(){
     west();
     centralndia();
     northIndia();
+
 });
 
 function southIndia(){
@@ -222,13 +223,14 @@ function northIndia(){
         <td>${sumOthers}</td>
         `;
         tableBody.appendChild(totalsRow);
-        
+
     })
     .catch(error => console.error('Error fetching data:', error));
 }
 
 function displayContent(contentId){
     var contentElements=document.getElementsByClassName('content');
+    
     for(var i=0;i<contentElements.length;i++){
         contentElements[i].classList.remove('active');
     }
