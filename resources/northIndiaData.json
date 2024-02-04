@@ -1,0 +1,12 @@
+[
+    {"state": "Bihar", "totalSeats": "40", "indiaAlliance":"30","nda": "10","others": "0"},
+    {"state": "Rajasthan", "totalSeats": "25", "indiaAlliance":"10","nda": "15","others": "0"},
+    {"state": "UP", "totalSeats": "80", "indiaAlliance":"25","nda": "55","others": "0"},
+    {"state": "Uthrakand", "totalSeats": "5", "indiaAlliance":"2","nda": "3","others": "15"},
+    {"state": "Himashal", "totalSeats": "4", "indiaAlliance":"2","nda": "2","others": "0"},
+    {"state": "Jammu and Kashmir", "totalSeats": "5", "indiaAlliance":"3","nda": "2","others": "0"},
+    {"state": "Punjab", "totalSeats": "13", "indiaAlliance":"12","nda": "0","others": "1"},
+    {"state": "Haryana", "totalSeats": "10", "indiaAlliance":"6","nda": "4","others": "0"},
+    {"state": "Delhi", "totalSeats": "5", "indiaAlliance":"5","nda": "2","others": "0"},
+    {"state": "Union Territories", "totalSeats": "5", "indiaAlliance":"3","nda": "2","others": "0"}
+]
