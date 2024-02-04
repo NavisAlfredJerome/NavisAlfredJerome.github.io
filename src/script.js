@@ -12,6 +12,11 @@ function southIndia(){
     .then(data =>{
         const tableBody = document.getElementById('southIndiaDataTableBody');
 
+        let sumTotalSeats = 0;
+        let sumIndiaAlliance = 0;
+        let sumNda = 0;
+        let sumOthers = 0;
+
         data.forEach(item =>{
             const row = document.createElement('tr');
 
@@ -24,9 +29,25 @@ function southIndia(){
             `;
 
             tableBody.appendChild(row);
+
+            sumTotalSeats+=parseFloat(item.totalSeats);
+            sumIndiaAlliance+=parseFloat(item.indiaAlliance);
+            sumNda+=parseFloat(item.nda);
+            sumOthers+=parseFloat(item.others);
+
         });
+
+        const totalsRow = document.createElement('tr');
+        totalsRow.innerHTML=`
+        <td>Total</td>
+        <td>${sumTotalSeats}</td>
+        <td>${sumIndiaAlliance}</td>
+        <td>${sumNda}</td>
+        <td>${sumOthers}</td>
+        `;
+        tableBody.appendChild(totalsRow);
     })
-    .catch(error => console.error('Error fetching data:', error));
+    .catch(error => console.error('Error fetching data from Table SouthIndia:', error));
 }
 
 function east(){
@@ -35,6 +56,11 @@ function east(){
     .then(data =>{
         const tableBody = document.getElementById('eastDataTableBody');
 
+        let sumTotalSeats = 0;
+        let sumIndiaAlliance = 0;
+        let sumNda = 0;
+        let sumOthers = 0;
+
         data.forEach(item =>{
             const row = document.createElement('tr');
 
@@ -47,7 +73,22 @@ function east(){
             `;
 
             tableBody.appendChild(row);
+
+            sumTotalSeats+=parseFloat(item.totalSeats);
+            sumIndiaAlliance+=parseFloat(item.indiaAlliance);
+            sumNda+=parseFloat(item.nda);
+            sumOthers+=parseFloat(item.others);
         });
+
+        const totalsRow = document.createElement('tr');
+        totalsRow.innerHTML=`
+        <td>Total</td>
+        <td>${sumTotalSeats}</td>
+        <td>${sumIndiaAlliance}</td>
+        <td>${sumNda}</td>
+        <td>${sumOthers}</td>
+        `;
+        tableBody.appendChild(totalsRow);
     })
     .catch(error => console.error('Error fetching data:', error));
 }
@@ -58,6 +99,11 @@ function west(){
     .then(data =>{
         const tableBody = document.getElementById('westDataTableBody');
 
+        let sumTotalSeats = 0;
+        let sumIndiaAlliance = 0;
+        let sumNda = 0;
+        let sumOthers = 0;
+
         data.forEach(item =>{
             const row = document.createElement('tr');
 
@@ -70,7 +116,24 @@ function west(){
             `;
 
             tableBody.appendChild(row);
+
+            sumTotalSeats+=parseFloat(item.totalSeats);
+            sumIndiaAlliance+=parseFloat(item.indiaAlliance);
+            sumNda+=parseFloat(item.nda);
+            sumOthers+=parseFloat(item.others);
+
         });
+
+        const totalsRow = document.createElement('tr');
+        totalsRow.innerHTML=`
+        <td>Total</td>
+        <td>${sumTotalSeats}</td>
+        <td>${sumIndiaAlliance}</td>
+        <td>${sumNda}</td>
+        <td>${sumOthers}</td>
+        `;
+        tableBody.appendChild(totalsRow);
+
     })
     .catch(error => console.error('Error fetching data:', error));
 }
@@ -81,6 +144,11 @@ function centralndia(){
     .then(data =>{
         const tableBody = document.getElementById('centralIndiaDataTableBody');
 
+        let sumTotalSeats = 0;
+        let sumIndiaAlliance = 0;
+        let sumNda = 0;
+        let sumOthers = 0;
+
         data.forEach(item =>{
             const row = document.createElement('tr');
 
@@ -93,7 +161,23 @@ function centralndia(){
             `;
 
             tableBody.appendChild(row);
+
+            sumTotalSeats+=parseFloat(item.totalSeats);
+            sumIndiaAlliance+=parseFloat(item.indiaAlliance);
+            sumNda+=parseFloat(item.nda);
+            sumOthers+=parseFloat(item.others);
+
         });
+
+        const totalsRow = document.createElement('tr');
+        totalsRow.innerHTML=`
+        <td>Total</td>
+        <td>${sumTotalSeats}</td>
+        <td>${sumIndiaAlliance}</td>
+        <td>${sumNda}</td>
+        <td>${sumOthers}</td>
+        `;
+        tableBody.appendChild(totalsRow);
     })
     .catch(error => console.error('Error fetching data:', error));
 }
@@ -104,6 +188,11 @@ function northIndia(){
     .then(data =>{
         const tableBody = document.getElementById('northIndiaDataTableBody');
 
+        let sumTotalSeats = 0;
+        let sumIndiaAlliance = 0;
+        let sumNda = 0;
+        let sumOthers = 0;
+
         data.forEach(item =>{
             const row = document.createElement('tr');
 
@@ -116,7 +205,24 @@ function northIndia(){
             `;
 
             tableBody.appendChild(row);
+
+            sumTotalSeats+=parseFloat(item.totalSeats);
+            sumIndiaAlliance+=parseFloat(item.indiaAlliance);
+            sumNda+=parseFloat(item.nda);
+            sumOthers+=parseFloat(item.others);
+
         });
+
+        const totalsRow = document.createElement('tr');
+        totalsRow.innerHTML=`
+        <td>Total</td>
+        <td>${sumTotalSeats}</td>
+        <td>${sumIndiaAlliance}</td>
+        <td>${sumNda}</td>
+        <td>${sumOthers}</td>
+        `;
+        tableBody.appendChild(totalsRow);
+        
     })
     .catch(error => console.error('Error fetching data:', error));
 }
