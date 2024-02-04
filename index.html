@@ -35,7 +35,7 @@
         }
 
         .column-width-1 {
-            width: 100px;
+            width: 80px;
         }
 
         .container {
@@ -94,20 +94,11 @@
             font-size: 16px;
         }
     </style>
+     <script src="src/script.js"></script>
 </head>
 
 <body>
-    <script>
-        function displayContent(contentId){
-            var contentElements=document.getElementsByClassName('content');
-            for(var i=0;i<contentElements.length;i++){
-                contentElements[i].classList.remove('active');
-            }
 
-            var selectedContent=document.getElementById(contentId);
-            selectedContent.classList.add('active');
-        }
-    </script>
     <h2 align="center"> Vote Vault 2024</h2>
     <div class="row">
         <div class="container">
@@ -148,55 +139,7 @@
                             <th class="column-width-1">Others</th>
                         </tr>
                     </thead>
-                    <tbody>
-                        <tr>
-                            <td class="tbcontainer">
-                                <img class="tbflag" src="images/tamilnaduFlag.png" alt="Flag">
-                                <span>Tamil Nadu</span>
-                            </td>
-                            <td class="numeric">39</td>
-                            <td class="numeric">35</td>
-                            <td class="numeric">0</td>
-                            <td class="numeric">4</td>
-                        </tr>
-                        <tr>
-                            <td class="tbcontainer">
-                                <img class="tbflag" src="images/karnatakaFlag.png" alt="Flag">
-                                <span>Karnataka</span>
-                            </td>
-                            <td class="numeric">28</td>
-                            <td class="numeric">18</td>
-                            <td class="numeric">10</td>
-                            <td class="numeric">0</td>
-                        </tr>
-                        <tr>
-                            <td>Kerala</td>
-                            <td class="numeric">20</td>
-                            <td class="numeric">20</td>
-                            <td class="numeric">0</td>
-                            <td class="numeric">0</td>
-                        </tr>
-                        <tr>
-                            <td>Andra</td>
-                            <td class="numeric">25</td>
-                            <td class="numeric">10</td>
-                            <td class="numeric">0</td>
-                            <td class="numeric">15</td>
-                        </tr>
-                        <tr>
-                            <td>Telengana</td>
-                            <td class="numeric">17</td>
-                            <td class="numeric">10</td>
-                            <td class="numeric">0</td>
-                            <td class="numeric">7</td>
-                        </tr>
-                        <tr>
-                            <td>Pondicherry</td>
-                            <td class="numeric">1</td>
-                            <td class="numeric">1</td>
-                            <td class="numeric">0</td>
-                            <td class="numeric">0</td>
-                        </tr>
+                    <tbody id="tableBody">
                     </tbody>
                 </table>
 
@@ -455,7 +398,7 @@
                 <td class="numeric">15</td>
             </tr>
             <tr>
-                <td>Telengana</td>
+                <td>Telangana</td>
                 <td class="numeric">17</td>
                 <td class="numeric">10</td>
                 <td class="numeric">0</td>

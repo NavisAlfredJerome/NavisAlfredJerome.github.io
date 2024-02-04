@@ -1,0 +1,8 @@
+[
+    {"state": "Tamil Nadu", "totalSeats": "39", "indiaAlliance":"35","nda": "0","others": "4"},
+    {"state": "Karnataka", "totalSeats": "28", "indiaAlliance":"18","nda": "10","others": "0"},
+    {"state": "Kerala", "totalSeats": "20", "indiaAlliance":"20","nda": "0","others": "0"},
+    {"state": "Andra", "totalSeats": "25", "indiaAlliance":"10","nda": "0","others": "15"},
+    {"state": "Telangana", "totalSeats": "17", "indiaAlliance":"10","nda": "0","others": "7"},
+    {"state": "Pondicherry", "totalSeats": "1", "indiaAlliance":"1","nda": "0","others": "0"}
+]
